@@ -8,6 +8,9 @@
 #Cantidad de cajas a comprar
 #Precio a pagar
 
+SUPERFICIEHAB = 0
+SUPERFICIECER = 0
+SUPERFICIECAJA = 0
 
 #Primero preguntamos si se desea utilizar el programa para calcular
 NEGOCIO = str(input("Si desea ingresar los datos ponga S, de lo contrario ponga N"))
@@ -26,3 +29,13 @@ while NEGOCIO == "S":
     PRECIOCER = float(input("Ingrese el precio por caja de los ceramicos elegidos: "))
 
     #En esta primera parte solicitamos los datos para realizar los calculos
+
+#Ahora que ya tenemos todos los datos proseguiremos a calcular lo que se necesita
+
+    #Primero calculamos las superficies
+    SUPERFICIEHAB = LARGOHAB * ANCHOHAB
+    SUPERFICIECER = LARGOCER * ANCHOCER
+    #Este calculo corresponde a la superficie que cubren los 10 ceramicos que trae la caja
+    SUPERFICIECAJA = SUPERFICIECER * 10
+
+    #En esta segunda parte calculamos las superficies que necesitamos para responder a las preguntas finales
