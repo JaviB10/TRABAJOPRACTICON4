@@ -59,3 +59,13 @@ while NEGOCIO == "S":
     PRECTOTAL = CANTIDADCAJ * PRECIOCER
 
     #En esta tercera parte calculamos las cantidades necesarias y el precio total que deberemos pagar
+
+#Una vez calculado todo lo necesario proseguiremos a mostrar las respuestas para que el usuario pueda verlas
+
+    print("LA CANTIDAD DE CERAMICOS UNITARIOS QUE SE NECESITAN SON: ", CANTIDADCER, "CERAMICOS")
+    print("LA CANTIDAD DE CAJAS QUE SE DEBEN COMPRAR SON: ", CANTIDADCAJ, "CAJAS")
+    print("EL PRECIO A PAGAR POR TODAS LAS CAJAS ES DE: $", PRECTOTAL)
+
+    #Por ultimo le volvemos a preguntar al usuario si desea ingresar otros datos para calcular
+    NEGOCIO = str(input("Si quiere ingresar otros datos ponga S, de lo contrario ponga N"))
+#PROGRAMA TERMINADO
