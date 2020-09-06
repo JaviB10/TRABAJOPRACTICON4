@@ -8,9 +8,14 @@
 #Cantidad de cajas a comprar
 #Precio a pagar
 
+import math
+
 SUPERFICIEHAB = 0
 SUPERFICIECER = 0
 SUPERFICIECAJA = 0
+CANTIDADCER = 0
+CANTIDADCAJ = 0
+PRECTOTAL = 0
 
 #Primero preguntamos si se desea utilizar el programa para calcular
 NEGOCIO = str(input("Si desea ingresar los datos ponga S, de lo contrario ponga N"))
@@ -39,3 +44,18 @@ while NEGOCIO == "S":
     SUPERFICIECAJA = SUPERFICIECER * 10
 
     #En esta segunda parte calculamos las superficies que necesitamos para responder a las preguntas finales
+
+#Ahora que ya calculamos las superficies proseguiremos a calcular lo que se necesita para responder a las solicitudes finales
+
+    #Calculamos la cantidad de ceramicos que se necesitan
+    CANTIDADCER = SUPERFICIEHAB / SUPERFICIECER
+    CANTIDADCER = math.ceil(CANTIDADCER)
+
+    #Calculamos las cajas que necesitaremos (sabiendo que por cada caja vienen 10 ceramicos)
+    CANTIDADCAJ = SUPERFICIEHAB / SUPERFICIECAJA
+    CANTIDADCAJ = math.ceil(CANTIDADCAJ)
+
+    #Calculamos el precio a pagar por las cajas que necesitaremos
+    PRECTOTAL = CANTIDADCAJ * PRECIOCER
+
+    #En esta tercera parte calculamos las cantidades necesarias y el precio total que deberemos pagar
