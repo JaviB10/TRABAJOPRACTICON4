@@ -16,6 +16,7 @@ SUPERFICIECAJA = 0
 CANTIDADCER = 0
 CANTIDADCAJ = 0
 PRECTOTAL = 0
+RECAUDACION = 0
 
 #Primero preguntamos si se desea utilizar el programa para calcular
 NEGOCIO = str(input("Si desea ingresar los datos ponga S, de lo contrario ponga N"))
@@ -66,6 +67,12 @@ while NEGOCIO == "S":
     print("LA CANTIDAD DE CAJAS QUE SE DEBEN COMPRAR SON: ", CANTIDADCAJ, "CAJAS")
     print("EL PRECIO A PAGAR POR TODAS LAS CAJAS ES DE: $", PRECTOTAL)
 
+
+    #Se acumula el valor de esta compra a la recaudacion diaria
+    RECAUDACION = RECAUDACION + PRECTOTAL
+
     #Por ultimo le volvemos a preguntar al usuario si desea ingresar otros datos para calcular
     NEGOCIO = str(input("Si quiere ingresar otros datos ponga S, de lo contrario ponga N"))
+
+print("EL TOTAL RECAUDADO EN EL DIA FUE: ,", RECAUDACION)
 #PROGRAMA TERMINADO
