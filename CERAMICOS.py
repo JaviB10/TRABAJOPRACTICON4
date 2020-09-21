@@ -74,5 +74,5 @@ while NEGOCIO == "S":
     #Por ultimo le volvemos a preguntar al usuario si desea ingresar otros datos para calcular
     NEGOCIO = str(input("Si quiere ingresar otros datos ponga S, de lo contrario ponga N"))
 
-    print("EL TOTAL RECAUDADO EN EL DIA FUE: ,", RECAUDACION)
+print("EL TOTAL RECAUDADO EN EL DIA FUE: ,", RECAUDACION)
 #PROGRAMA TERMINADO
